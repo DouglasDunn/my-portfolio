@@ -1,0 +1,28 @@
+.services {
+  height: 30rem;
+
+  display: flex;
+
+  &__box {
+    background-color: blue;
+
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__card {
+    background-color: red;
+
+    height: 20rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

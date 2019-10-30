@@ -1,0 +1,26 @@
+.section-about {
+  // background-color: green;
+  color: #2c3e50;
+  height: 100vh;
+
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-services {
+  background-color: #1abc9c;
+  color: $color-white;
+  height: 100vh;
+
+  // display: flex;
+}
+
+.section-portfolio {
+  background-color: purple;
+  color: $color-white;
+  height: 100rem;
+
+  // display: flex;
+}

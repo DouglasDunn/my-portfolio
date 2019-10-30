@@ -1,0 +1,101 @@
+.navigation {
+  // background-color: #bd5d38;
+  background-color: #2c3e50;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  // display: flex;
+  // flex-direction: column;
+  width: 27rem;
+  height: 100vh;
+  padding: .8rem 1.6rem;
+
+  // &__anchor-img {
+  //   // width: 16rem;
+  //   // height: 16rem;
+  //   border: .8rem solid rgba(255, 255, 255, .2);
+  // }
+
+  &__shape {
+    // max-width: 16rem;
+    // max-height: 16rem;
+    width: 16rem;
+    height: 16rem;
+    margin: 10rem auto 0;
+    // border: .8rem solid rgba(255, 255, 255, .2);
+    // border-radius: 50%;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &__img {
+    height: 100%;
+    transform: translateX(-4.3rem);
+    // backface-visibility: hidden;
+  }
+
+  &__list {
+    font-size: 1.4rem;
+    list-style: none;
+    // margin-top: 3.5rem;
+    margin: 1.5rem auto;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: .25rem;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    // left: 11.75rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1abc9c;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s cubic-bezier(1,0,0,1);
+                // height .7s cubic-bezier(1,0,0,1);
+  }
+
+  &__item:hover::before {
+    transform: scaleX(1);
+    // height: 100%
+    // width: 100%;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-white;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    z-index: 20;
+
+    padding: 1.5rem 3rem;
+    transition: color .5s;
+  }
+
+  &__item:hover &__link:link,
+  &__item:hover &__link:visited, {
+    color: #fed136;
+  }
+}
