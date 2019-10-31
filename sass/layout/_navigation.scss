@@ -82,16 +82,30 @@
   &__link:link,
   &__link:visited {
     color: $color-white;
+    height: 4rem;
     font-size: 1.7rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    display: block;
+    // display: block;
     position: relative;
     z-index: 20;
 
-    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // padding: 1.5rem 3rem;
     transition: color .5s;
+  }
+
+  &__icon {
+    margin-bottom: 1px;
+    margin-right: 1rem;
+  }
+
+  &__text {
+    // margin-right: 5rem;
   }
 
   &__item:hover &__link:link,

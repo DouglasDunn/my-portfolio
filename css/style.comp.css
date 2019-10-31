@@ -27,6 +27,10 @@ body {
   background-color: #55c57a;
   color: #fff; }
 
+.icon {
+  height: 3rem;
+  width: 3rem; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
@@ -41,7 +45,14 @@ body {
 
 .heading-secondary {
   font-size: 5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: .5rem; }
 
 .paragraph {
   max-width: 65rem;
@@ -72,6 +83,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .services__icon {
+    font-size: 10rem; }
 
 .portfolio {
   height: 56rem;
@@ -182,15 +195,20 @@ body {
     transform: scaleX(1); }
   .navigation__link:link, .navigation__link:visited {
     color: #fff;
+    height: 4rem;
     font-size: 1.7rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    display: block;
     position: relative;
     z-index: 20;
-    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: color .5s; }
+  .navigation__icon {
+    margin-bottom: 1px;
+    margin-right: 1rem; }
   .navigation__item:hover .navigation__link:link,
   .navigation__item:hover .navigation__link:visited {
     color: #fed136; }
