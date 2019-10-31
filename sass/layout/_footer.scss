@@ -1,0 +1,35 @@
+.footer {
+  background-color: #1a252f;
+  height: 10rem;
+
+  // display: flex;
+  // align-items: center;
+
+  &__box {
+    background-color: purple;
+
+    height: 100%;
+    max-width: 90rem;
+    margin: auto;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    background-color: blue;
+
+    font-size: 1.6rem;
+  }
+
+  &__logo-box {
+    background-color: red;
+
+    width: 30rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}

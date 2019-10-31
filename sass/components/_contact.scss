@@ -1,0 +1,32 @@
+.contact {
+  background-color: orange;
+
+  height: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__box {
+    background-color: purple;
+
+    height: 9rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    font-size: 3rem;
+
+    background-color: red;
+  }
+
+  &__email {
+    background-color: blue;
+
+    font-size: 1.6rem;
+  }
+}
