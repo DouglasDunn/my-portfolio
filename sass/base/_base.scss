@@ -36,7 +36,7 @@ body {
 }
 
 .container-column {
-  background-color: green;
+  // background-color: green;
 
   max-width: 90rem;
   height: 100%;
@@ -45,14 +45,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 ::selection {
-    background-color: $color-primary;
+    background-color: #1abc9c;
     color: $color-white;
-}
-
-.icon {
-  height: 3rem;
-  width: 3rem;
 }

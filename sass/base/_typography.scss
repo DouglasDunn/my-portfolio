@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  line-height: 1.7;
 }
 
 .heading-primary {
@@ -23,14 +24,19 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: .5rem;
+  margin-top: 0.75rem;
+  opacity: 0.5;
 }
 
 .paragraph {
   max-width: 65rem;
   font-size: 1.6rem;
   color: #495057;
+
+  &--white {
+    color: white;
+  }
 }

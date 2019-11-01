@@ -1,7 +1,7 @@
 .contact {
-  background-color: orange;
+  // background-color: orange;
 
-  height: 20rem;
+  height: 13rem;
 
   display: flex;
   flex-direction: column;
@@ -9,23 +9,24 @@
   align-items: center;
 
   &__box {
-    background-color: purple;
+    // background-color: purple;
 
     height: 9rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__icon {
-    font-size: 3rem;
+    font-size: 6rem;
 
-    background-color: red;
+    // background-color: red;
   }
 
   &__email {
-    background-color: blue;
+    // background-color: blue;
 
     font-size: 1.6rem;
   }

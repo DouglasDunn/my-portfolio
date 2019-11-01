@@ -1,17 +1,21 @@
 .portfolio {
   height: 56rem;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
 
   &__row {
     flex: 1;
+
     display: flex;
   }
 
   &__box {
-    background-color: green;
-    border: 1px solid black;
+    background-image: url(../img/virtual-therapy.png);
+    background-size: cover;
+    background-position: top;
+    // border: 1px solid black;
 
     flex: 1;
   }

@@ -6,7 +6,7 @@
   // align-items: center;
 
   &__box {
-    background-color: purple;
+    // background-color: purple;
 
     height: 100%;
     max-width: 90rem;
@@ -19,17 +19,47 @@
   }
 
   &__copyright {
-    background-color: blue;
+    // background-color: blue;
 
     font-size: 1.6rem;
   }
 
-  &__logo-box {
-    background-color: red;
+  &__list {
+    // background-color: red;
 
-    width: 30rem;
+    list-style: none;
+    width: 17rem;
+    height: 5rem;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    // color: $color-white;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    background-color: black;
+    color: $color-white;
+    height: 100%;
+    text-decoration: none;
+    // height: 5rem;
+    // width: 5rem;
+    border-radius: 100%;
+    // outline: 0;
+    // background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 2.75rem;
   }
 }

@@ -1,24 +1,29 @@
 .services {
   height: 30rem;
+  width: 100%;
 
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &__box {
-    background-color: blue;
-
-    width: 25%;
-
-    display: flex;
-    align-items: center;
-  }
+  // &__box {
+  //   background-color: blue;
+  //
+  //   width: 25%;
+  //
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   &__card {
-    background-color: red;
+    // background-color: red;
 
+    width: 20rem;
     height: 20rem;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    // width: 95%;
+    // margin-left: auto;
+    // margin-right: auto;
 
     display: flex;
     flex-direction: column;
@@ -27,6 +32,7 @@
   }
 
   &__icon {
-    font-size: 10rem;
+    font-size: 9rem;
+    opacity: 0.5;
   }
 }

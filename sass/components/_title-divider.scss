@@ -1,0 +1,30 @@
+.title-divider {
+  margin: 2rem 0 2.5rem;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+
+  &__line {
+    background-color: $color-white;
+    width: 11rem;
+    height: .4rem;
+    border-radius: 1.6rem;
+
+    &:first-child {
+      margin-right: 1.6rem;
+    }
+
+    &:last-child {
+      margin-left: 1.6rem;
+    }
+  }
+
+  &--dark {
+    background-color: #2c3e50;
+  }
+
+  &__icon {
+    font-size: 3.75rem;
+    color: #fed136;
+  }
+}

@@ -56,18 +56,34 @@
 
     <header class="header">
       <div class="header__text-box">
-        <h1 class="heading-primary u-margin-bottom-small">
+        <h1 class="heading-primary">
           Douglas <span class="heading-primary--main">Dunn</span>
         </h1>
+      </div>
+
+      <div class="title-divider">
+        <div class="title-divider__line"></div>
+
+        <ion-icon class="title-divider__icon" name="ios-star"></ion-icon>
+
+        <div class="title-divider__line"></div>
       </div>
     </header>
 
     <main>
       <section class="section-about">
         <div class="container-column">
-          <h2 class="heading-secondary u-center-text u-margin-bottom-small">
+          <h2 class="heading-secondary u-center-text">
             About
           </h2>
+
+          <div class="title-divider">
+            <div class="title-divider__line title-divider--dark"></div>
+
+            <ion-icon class="title-divider__icon" name="ios-star"></ion-icon>
+
+            <div class="title-divider__line title-divider--dark"></div>
+          </div>
 
           <div class="about u-center-text">
             <p class="paragraph">
@@ -79,78 +95,86 @@
 
       <section class="section-services">
         <div class="container-column">
-          <h2 class="heading-secondary u-center-text u-margin-bottom-small">
+          <h2 class="heading-secondary u-center-text">
             At your service
           </h2>
 
+          <div class="title-divider">
+            <div class="title-divider__line"></div>
+
+            <ion-icon class="title-divider__icon" name="ios-star"></ion-icon>
+
+            <div class="title-divider__line"></div>
+          </div>
+
+          <p class="paragraph paragraph--white">
+            Hover over each card!
+          </p>
+
           <div class="services">
-            <div class="services__box">
-              <div class="services__card">
-                <ion-icon class="services__icon" name="logo-sass"></ion-icon>
+            <!-- <div class="services__box"> -->
+            <div class="services__card">
+              <ion-icon class="services__icon" name="logo-sass"></ion-icon>
 
-                <h3 class="heading-tertiary">Design</h3>
-              </div>
+              <h3 class="heading-tertiary">Design</h3>
             </div>
+            <!-- </div>
 
-            <div class="services__box">
-              <div class="services__card">
-                <ion-icon name="logo-javascript"></ion-icon>
+            <div class="services__box"> -->
+            <div class="services__card">
+              <ion-icon class="services__icon" name="logo-javascript"></ion-icon>
 
-                <h1>Title</h1>
-              </div>
+              <h3 class="heading-tertiary">Front End</h3>
             </div>
+            <!-- </div>
 
-            <div class="services__box">
-              <div class="services__card">
-                <h1>Icon</h1>
+            <div class="services__box"> -->
+            <div class="services__card">
+              <ion-icon class="services__icon" name="logo-nodejs"></ion-icon>
 
-                <h1>Title</h1>
-              </div>
+              <h3 class="heading-tertiary">Back End</h3>
             </div>
+            <!-- </div>
 
-            <div class="services__box">
-              <div class="services__card">
-                <h1>Icon</h1>
+            <div class="services__box"> -->
+            <div class="services__card">
+              <ion-icon class="services__icon" name="list-box"></ion-icon>
 
-                <h1>Title</h1>
-              </div>
+              <h3 class="heading-tertiary">Testing</h3>
             </div>
+            <!-- </div> -->
           </div>
         </div>
       </section>
 
       <section class="section-portfolio">
         <div class="container-column">
-          <h2 class="heading-secondary u-center-text u-margin-bottom-small">
+          <h2 class="heading-secondary u-center-text">
             Portfolio
           </h2>
+
+          <div class="title-divider">
+            <div class="title-divider__line title-divider--dark"></div>
+
+            <ion-icon class="title-divider__icon" name="ios-star"></ion-icon>
+
+            <div class="title-divider__line title-divider--dark"></div>
+          </div>
 
           <div class="portfolio">
             <div class="portfolio__row">
               <div class="portfolio__box">
-                <h1>Icon</h1>
-
-                <h1>Title</h1>
               </div>
 
               <div class="portfolio__box">
-                <h1>Icon</h1>
-
-                <h1>Title</h1>
               </div>
             </div>
 
             <div class="portfolio__row">
               <div class="portfolio__box">
-                <h1>Icon</h1>
-
-                <h1>Title</h1>
               </div>
 
               <div class="portfolio__box">
-                <h1>Icon</h1>
-
-                <h1>Title</h1>
               </div>
             </div>
           </div>
@@ -159,17 +183,25 @@
 
       <section class="section-contact">
         <div class="container-column">
-          <h2 class="heading-secondary u-center-text u-margin-bottom-small">
-            Contact
+          <h2 class="heading-secondary u-center-text">
+            get in touch!
           </h2>
 
+          <div class="title-divider">
+            <div class="title-divider__line"></div>
+
+            <ion-icon class="title-divider__icon" name="ios-star"></ion-icon>
+
+            <div class="title-divider__line"></div>
+          </div>
+
           <div class="contact u-center-text">
-            <p class="paragraph">
-              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            <p class="paragraph paragraph--white">
+              Interested in any of my services? Feel free to email me or message me through LinkedIn.
             </p>
 
             <div class="contact__box">
-              <h1 class="contact__icon">Icon</h1>
+              <ion-icon class="contact__icon" name="ios-mail"></ion-icon>
 
               <p class="contact__email">
                 douglasjdunnjr@gmail.com
@@ -183,11 +215,26 @@
     <footer class="footer">
       <div class="footer__box">
         <p class="footer__copyright">Copyright &copy; Douglas Dunn 2019</p>
-        <div class="footer__logo-box">
-          <h1>Twitter</h1>
-          <h1>LinkedIn</h1>
-          <h1>Github</h1>
-        </div>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <ion-icon class="footer__icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <ion-icon class="footer__icon" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <ion-icon class="footer__icon" name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
 
