@@ -11,4 +11,18 @@
     // align-items: center;
     // justify-content: center;
   }
+
+  &__type-writer-box {
+    height: 11rem;
+  }
+
+  &__type-writer {
+    color: $color-white;
+    font-size: 6rem;
+    font-weight: 300;
+  }
+
+  &__type-writer-text {
+    border-right: 0.2rem solid #fed136;
+  }
 }

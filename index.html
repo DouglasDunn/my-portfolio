@@ -18,35 +18,35 @@
 
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <a href="#home" class="navigation__link">
             <ion-icon class="navigation__icon" name="ios-home"></ion-icon>
             <span class="navigation__text">home</span>
           </a>
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <a href="#about" class="navigation__link">
             <ion-icon class="navigation__icon" name="ios-information-circle"></ion-icon>
             <span class="navigation__text">about</span>
           </a>
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <a href="#services" class="navigation__link">
             <ion-icon class="navigation__icon" name="ios-construct"></ion-icon>
             <span class="navigation__text">services</span>
           </a>
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <a href="#portfolio" class="navigation__link">
             <ion-icon class="navigation__icon" name="ios-folder"></ion-icon>
             <span class="navigation__text">portfolio</span>
           </a>
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <a href="#contact" class="navigation__link">
             <ion-icon class="navigation__icon" name="ios-mail"></ion-icon>
             <span class="navigation__text">contact</span>
           </a>
@@ -54,7 +54,7 @@
       </ul>
     </nav>
 
-    <header class="header">
+    <header id="home" class="header">
       <div class="header__text-box">
         <h1 class="heading-primary">
           Douglas <span class="heading-primary--main">Dunn</span>
@@ -68,10 +68,14 @@
 
         <div class="title-divider__line"></div>
       </div>
+
+      <div class="header__type-writer-box">
+        <h1 class="header__type-writer" data-wait="1000" data-words='["Front End Developer", "UI/UX Developer", "Full Stack Developer"]'></h1>
+      </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section id="about" class="section-about">
         <div class="container-column">
           <h2 class="heading-secondary u-center-text">
             About
@@ -87,13 +91,13 @@
 
           <div class="about u-center-text">
             <p class="paragraph">
-              Hey there! My name is Douglas Dunn, Front End Developer at a company named Virtual Therapy. I enjoy using my programming skills to helping those in need. My job never gets boring due to the fact that I face a different challenge everyday, so I never stop growing. If you need a Front End Developer, I'm your guy!
+              Hey there! My name is Douglas Dunn, Front End Developer at a company named Virtual Therapy. I enjoy using my programming skills to help those in need. My job never gets boring due to the fact that I face a different challenge everyday, so I never stop growing. If you need a Front End Developer, I'm your guy!
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section-services">
+      <section id="services" class="section-services">
         <div class="container-column">
           <h2 class="heading-secondary u-center-text">
             At your service
@@ -114,9 +118,18 @@
           <div class="services">
             <!-- <div class="services__box"> -->
             <div class="services__card">
-              <ion-icon class="services__icon" name="logo-sass"></ion-icon>
+              <div class="services__card--front">
+                <ion-icon class="services__icon" name="logo-sass"></ion-icon>
 
-              <h3 class="heading-tertiary">Design</h3>
+                <h3 class="heading-tertiary">Design</h3>
+              </div>
+
+              <div class="service__card--back">
+                <p>
+                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                </p>
+              </div>
             </div>
             <!-- </div>
 
@@ -147,7 +160,7 @@
         </div>
       </section>
 
-      <section class="section-portfolio">
+      <section id="portfolio" class="section-portfolio">
         <div class="container-column">
           <h2 class="heading-secondary u-center-text">
             Portfolio
@@ -181,7 +194,7 @@
         </div>
       </section>
 
-      <section class="section-contact">
+      <section id="contact" class="section-contact">
         <div class="container-column">
           <h2 class="heading-secondary u-center-text">
             get in touch!
@@ -239,5 +252,7 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
