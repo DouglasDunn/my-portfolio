@@ -45,13 +45,6 @@ body {
   text-transform: uppercase;
   font-weight: 700; }
 
-.heading-tertiary {
-  font-size: 1.75rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 0.75rem;
-  opacity: 0.5; }
-
 .paragraph {
   max-width: 65rem;
   font-size: 1.6rem;
@@ -69,21 +62,53 @@ body {
   height: 40rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-between; }
   .services__card {
-    width: 20rem;
-    height: 20rem;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    width: 20rem; }
+    .services__card--front {
+      background-color: #1abc9c;
+      height: 20rem;
+      transform: translateY(10rem);
+      position: relative;
+      z-index: 1;
+      transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
     .services__card--back {
-      background-color: #fff; }
+      background-color: #fff;
+      color: #495057;
+      height: 20rem;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+      transform: translateY(-10rem);
+      transition: 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .services__card:hover .services__card--front {
+      transform: translateY(0);
+      background-color: #fed136; }
+    .services__card:hover .services__card--back {
+      transform: translateY(0); }
+    .services__card--text {
+      width: 90%;
+      font-size: 1.5rem; }
+  .services__title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    opacity: 0.5;
+    transition: 0.5s; }
+  .services__card:hover .services__title {
+    opacity: 1; }
   .services__icon {
     font-size: 9rem;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transition: 0.5s; }
+  .services__card:hover .services__icon {
+    opacity: 1; }
 
 .portfolio {
   height: 56rem;
